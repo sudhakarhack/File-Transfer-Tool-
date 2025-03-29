@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File Transfer</title>
+    <style>
+        
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #65a3bb;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-image: url("https://img.freepik.com/free-vector/concept-landing-page-transfer-files_23-2148303747.jpg?size=626&ext=jpg");
+            background-size: cover;
+            
+            
+        }
+
+        .container {
+            max-width: 800px;
+            padding: 20px;
+            background-color: #cfcaca;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+        }
+
+        h1 {
+            font-size: 24px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        input[type="file"] {
+            margin-bottom: 10px;
+        }
+
+        button {
+            padding: 5px;
+            font-size: 14px;
+            cursor: pointer;
+            background-color: #4CAF50;
+            color: #fff;
+            border: none;
+            border-radius: 3px;
+            width: 100%;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        .error {
+            color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>File Transfer</h1>
+        <div class="container">
+            <form id="uploadForm" enctype="multipart/form-data">
+                <input type="file" id="fileInput" name="file" accept=".txt, .pdf, .docx">
+                <button ><a href="http://10.1.0.151:8010"></a>Upload</button>
+            </form>
+        </div>  
+
+        <form id="receiveForm" enctype="multipart/form-data">
+            <button type="submit">Receive</button>
+        </form>
+    </div>
+</body>
+</html>
